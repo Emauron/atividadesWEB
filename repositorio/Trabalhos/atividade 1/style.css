@@ -1,0 +1,19 @@
+.checkbox_list{
+       max-width: 400px;
+}
+.radio_list {
+       max-width: 400px;
+}
+#submit{
+       max-width: 100px;
+}
+#tela{
+       background-color: white;
+       height: 700px;
+       background-position: center;
+       background-repeat: no-repeat;
+}
+.img_front{
+       position: absolute;
+       display: none;
+}

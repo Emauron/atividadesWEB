@@ -1,0 +1,64 @@
+@font-face {
+       font-family: placard;
+       src: url(Digital7-rg1mL.ttf);
+}
+
+body{
+       padding: 20px;
+}
+#menu{
+       width: 600px;
+       background-color: #bdbdbd;
+}
+#campo{
+       width: 600px;
+       padding: 30px;
+       padding-top: 10px;
+       margin-left: auto;
+       margin-right: auto;
+       background-color: #bdbdbd;
+}
+.campo2{
+       border-left: 8px solid #585858;
+       border-right: 8px solid #e7e7e7;
+       
+}
+#topline{
+       border-top: 8px solid #585858;
+}
+#bottomline{
+       border-bottom: 8px solid #e7e7e7; 
+}
+#menuItems{
+       border-bottom: 8px solid #e7e7e7; 
+       border-top: 8px solid #585858;
+       padding: 5px;
+}
+.placard{
+       height: 70px;
+       width: 110px;
+       background-color: rgb(24, 24, 24);
+       text-align: center;
+}
+.placard span{
+       font-size: 70px;
+       position: relative;
+       top: -17px;
+       font-family: 'placard';
+       color: #ff0000b2;
+}
+#smileBtn {
+       height: 70px;
+       width: 70px;
+       background-image: url(smile.png);
+       background-size: cover;
+       border: 0;
+}
+.square{
+       height: 50px;
+       width: 50px;
+       
+}
+.square img{
+       width: 50px;
+}

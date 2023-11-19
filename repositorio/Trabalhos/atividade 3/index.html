@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="script.js"></script>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body onload="clock(), radar()" class="bg-dark">
+       <header class="row d-flex justify-content-center">
+              <section id="menu" class="col col-12 p-2 pt-3">
+                     <div class="row">
+                            <div id="menuItems"  class="col col-11 d-flex justify-content-around mx-auto campo2">
+                                   <div class=" d-inline-block  placard"><span>034</span></div>
+                                   <div id="smileBox" class=" d-inline-block items"><button id="smileBtn" onmousedown="clickreset()" onclick="reset()"></button></div>
+                                   <div class=" d-inline-block  placard"><span id="timer">000</span></div>
+                            </div>
+                     </div>
+              </section>
+       </header>
+       <main>
+              <section id="campo">
+                     <div  id="topline" class="row campo2">
+                            <img id= "1" onclick="block('safe', '1')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "2" onclick="block('bomb', '2')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "3" onclick="block('bomb', '3')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "4" onclick="block('safe', '4')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "5" onclick="block('safe', '5')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "6" onclick="block('safe', '6')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "7" onclick="block('bomb', '7')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "8" onclick="block('safe', '8')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "9" onclick="block('safe', '9')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "10" onclick="block('safe', '10')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "11" onclick="block('safe', '11')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "12" onclick="block('safe', '12')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "13" onclick="block('bomb', '13')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "14" onclick="block('safe', '14')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "15" onclick="block('safe', '15')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "16" onclick="block('bomb', '16')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "17" onclick="block('safe', '17')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "18" onclick="block('safe', '18')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "19" onclick="block('safe', '19')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "20" onclick="block('safe', '20')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "21" onclick="block('safe', '21')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "22" onclick="block('safe', '22')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "23" onclick="block('safe', '23')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "24" onclick="block('bomb', '24')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "25" onclick="block('bomb', '25')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "26" onclick="block('safe', '26')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "27" onclick="block('safe', '27')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "28" onclick="block('safe', '28')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "29" onclick="block('safe', '29')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "30" onclick="block('safe', '30')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "31" onclick="block('safe', '31')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "32" onclick="block('safe', '32')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "33" onclick="block('safe', '33')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "34" onclick="block('bomb', '34')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "35" onclick="block('safe', '35')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "36" onclick="block('safe', '36')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "37" onclick="block('safe', '37')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "38" onclick="block('safe', '38')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "39" onclick="block('bomb', '39')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "40" onclick="block('safe', '40')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "41" onclick="block('safe', '41')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "42" onclick="block('safe', '42')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "43" onclick="block('safe', '43')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "44" onclick="block('safe', '44')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "45" onclick="block('bomb', '45')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "46" onclick="block('safe', '46')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "47" onclick="block('safe', '47')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "48" onclick="block('safe', '48')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "49" onclick="block('safe', '49')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "50" onclick="block('safe', '50')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "51" onclick="block('safe', '51')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "52" onclick="block('safe', '52')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "53" onclick="block('safe', '53')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "54" onclick="block('bomb', '54')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "55" onclick="block('safe', '55')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "56" onclick="block('safe', '56')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "57" onclick="block('safe', '57')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "58" onclick="block('safe', '58')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "59" onclick="block('safe', '59')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "60" onclick="block('safe', '60')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "61" onclick="block('safe', '61')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "62" onclick="block('safe', '62')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "63" onclick="block('bomb', '63')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "64" onclick="block('bomb', '64')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "65" onclick="block('safe', '65')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "66" onclick="block('safe', '66')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "67" onclick="block('safe', '67')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "68" onclick="block('safe', '68')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "69" onclick="block('safe', '69')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "70" onclick="block('safe', '70')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "71" onclick="block('safe', '71')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "72" onclick="block('bomb', '72')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "73" onclick="block('bomb', '73')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "74" onclick="block('safe', '74')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "75" onclick="block('safe', '75')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "76" onclick="block('safe', '76')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "77" onclick="block('safe', '77')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "78" onclick="block('bomb', '78')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "79" onclick="block('bomb', '79')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "80" onclick="block('bomb', '80')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "81" onclick="block('safe', '81')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "82" onclick="block('safe', '82')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "83" onclick="block('safe', '83')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "84" onclick="block('safe', '84')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "85" onclick="block('safe', '85')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "86" onclick="block('safe', '86')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "87" onclick="block('bomb', '87')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "88" onclick="block('safe', '88')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "89" onclick="block('safe', '89')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "90" onclick="block('safe', '90')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "91" onclick="block('safe', '91')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "92" onclick="block('bomb', '92')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "93" onclick="block('safe', '93')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "94" onclick="block('safe', '94')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "95" onclick="block('safe', '95')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "96" onclick="block('safe', '96')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "97" onclick="block('safe', '97')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "98" onclick="block('safe', '98')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "99" onclick="block('safe', '99')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "100" onclick="block('bomb', '100')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "101" onclick="block('bomb', '101')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "102" onclick="block('safe', '102')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "103" onclick="block('safe', '103')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "104" onclick="block('safe', '104')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "105" onclick="block('safe', '105')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "106" onclick="block('safe', '106')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "107" onclick="block('safe', '107')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "108" onclick="block('safe', '108')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "109" onclick="block('safe', '109')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "110" onclick="block('safe', '110')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "111" onclick="block('safe', '111')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "112" onclick="block('safe', '112')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "113" onclick="block('safe', '113')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "114" onclick="block('bomb', '114')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "115" onclick="block('safe', '115')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "116" onclick="block('safe', '116')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "117" onclick="block('bomb', '117')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "118" onclick="block('bomb', '118')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "119" onclick="block('safe', '119')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "120" onclick="block('safe', '120')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div   class="row campo2">
+                            <img id= "121" onclick="block('bomb', '121')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "122" onclick="block('safe', '122')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "123" onclick="block('bomb', '123')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "124" onclick="block('bomb', '124')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "125" onclick="block('safe', '125')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "126" onclick="block('safe', '126')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "127" onclick="block('safe', '127')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "128" onclick="block('safe', '128')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "129" onclick="block('safe', '129')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "130" onclick="block('safe', '130')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "131" onclick="block('bomb', '131')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "132" onclick="block('safe', '132')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                     </div>
+                     <div  id="bottomline" class="row campo2">
+                            <img id= "133" onclick="block('bomb', '133')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "134" onclick="block('safe', '134')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "135" onclick="block('safe', '135')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "136" onclick="block('bomb', '136')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "137" onclick="block('bomb', '137')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "138" onclick="block('safe', '138')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "139" onclick="block('safe', '139')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "140" onclick="block('safe', '140')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "141" onclick="block('safe', '141')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "142" onclick="block('safe', '142')" src="bloco.png" alt="" class="col col-1 p-0 square safe">
+                            <img id= "143" onclick="block('bomb', '143')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                            <img id= "144" onclick="block('bomb', '144')" src="bloco.png" alt="" class="col col-1 p-0 square bomb">
+                     </div>      
+                     <p class="text-center text-dark ">campo minado na base do chute por que não consegui programar os números que indicam se a bomba tá em volta :(</p>
+  
+              </section>
+       </main>
+</body>
+</html>
